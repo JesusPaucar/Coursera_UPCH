@@ -50,4 +50,12 @@ if uploaded_file is not None:
   #df = extract_data(uploaded_file)
   silabo = get_text(uploaded_file, translate = True)
   content = data_preprocessing(silabo)
-  st.write(content)
+  idx_u1 = content.find('unit 1')
+  #idx_u4 = content.find('unit 4')
+  idx_finish = content.find('v didactic')
+  #print(content[idx_u1: idx_u1 + 10])
+  #print(content[idx_u4: idx_u4 + 10])
+  #print(idx_finish)
+  #print(content[idx_finish: idx_finish + 5])
+  finish_content = content[idx_u1: idx_finish]
+  st.write(finish_content)
