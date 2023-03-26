@@ -58,7 +58,4 @@ if uploaded_file is not None:
   #print(idx_finish)
   #print(content[idx_finish: idx_finish + 5])
   finish_content = content[idx_u1: idx_finish]
-  st.write(content)
-  st.write(idx_u1)
-  st.write(idx_finish)
-  st.write(type(content))
+  st.write(finish_content)
