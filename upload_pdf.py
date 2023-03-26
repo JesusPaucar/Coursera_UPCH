@@ -34,5 +34,4 @@ uploaded_file = st.file_uploader('Choose yout .pdf file', type = 'pdf')
 if uploaded_file is not None:
   df = extract_data(uploaded_file)
   silabo = get_text(df, translate = True)
-
-st.write(silabo)
+  st.write(silabo)
