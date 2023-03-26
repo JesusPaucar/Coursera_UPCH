@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import pdfplumber
 import translators as ts
-import translator.server as tss
+import translators.server as tss
 from cleantext import clean
 import streamlit as st
 #import re
