@@ -32,6 +32,6 @@ def get_text(pdf_filename, translate = False):
 
 uploaded_file = st.file_uploader('Choose yout .pdf file', type = 'pdf')
 if uploaded_file is not None:
-  df = extract_data(uploaded_file)
-  silabo = get_text(df, translate = True)
+  #df = extract_data(uploaded_file)
+  silabo = get_text(uploaded_file, translate = True)
   st.write(silabo)
