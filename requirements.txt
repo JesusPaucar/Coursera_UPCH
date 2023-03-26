@@ -2,5 +2,3 @@ pdfplumber
 translators
 clean-text[gpl]
 nltk
-transformers
-sentence-transformers
