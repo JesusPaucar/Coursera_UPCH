@@ -15,7 +15,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 #from google.colab import files
-#from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer, util
 
 def get_text(pdf_filename, translate = False):
   text = ''
@@ -45,6 +45,7 @@ def data_preprocessing(review):
   review = ' '.join(review)
   return review
 
+model = SentenceTransformer('stsb-roberta-large')
 uploaded_file = st.file_uploader('Choose yout .pdf file', type = 'pdf')
 if uploaded_file is not None:
   #df = extract_data(uploaded_file)
@@ -58,4 +59,5 @@ if uploaded_file is not None:
   #print(idx_finish)
   #print(content[idx_finish: idx_finish + 5])
   finish_content = content[idx_u1: idx_finish]
-  st.write(finish_content)
+  embedding1 = model.encode(finish_content, convert_to_tensor=True)
+  st.write(embedding1)
