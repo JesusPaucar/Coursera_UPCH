@@ -35,7 +35,7 @@ def data_preprocessing(review):
   lemmatizer = WordNetLemmatizer()
   
   review = re.sub(re.compile('<.*?>'), '', review)
-  review = re.sub('[^A-Za-z0+9]+', ' ', review)
+  review = re.sub('[^A-Za-z0-9]+', ' ', review)
   
   review = review.lower()
   
