@@ -31,7 +31,7 @@ def get_text(pdf_filename, translate = False):
   return text
 
 def data_preprocessing(review):
-  stop_words = stopwords('english')
+  stop_words = stopwords.words('english')
   lemmatizer = WordNetLemmatizer()
   
   review = re.sub(re.compile('<.*?>'), '', review)
