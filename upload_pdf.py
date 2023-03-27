@@ -60,4 +60,4 @@ if uploaded_file is not None:
   finish_content = content[idx_u1: idx_finish]
   #model = SentenceTransformer('stsb-roberta-large')
   #embedding1 = model.encode(finish_content, convert_to_tensor=True)
-  #st.write(embedding1)
+  st.write(embedding1)
