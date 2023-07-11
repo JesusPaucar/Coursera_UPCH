@@ -38,3 +38,6 @@ pip install pdfplumber<br/>
 pip install clean-text[gpl]<br/>
 pip install keybert<br/>
 pip install streamlit<br/>
+
+## Ejecución
+Comando de ejecución streamlit: streamlit run P2.py
