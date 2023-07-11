@@ -16,8 +16,8 @@ Para más información: [Link modelo NLP](https://huggingface.co/sentence-transf
 
 ## Dependencias
 
-pandas == 1.5.3
-numpy == 1.23.5
+pandas == 1.5.3 \\
+numpy == 1.23.5 \\
 pdfplumber == 0.8.0
 cleantext[gpl] == 0.6.0
 streamlit == 1.20.0
