@@ -40,4 +40,4 @@ pip install keybert<br/>
 pip install streamlit<br/>
 
 ## Ejecución
-Comando de ejecución streamlit: streamlit run P2.py
+Comando de ejecución streamlit:<br/> streamlit run P2.py
